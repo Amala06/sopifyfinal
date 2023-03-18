@@ -1,0 +1,134 @@
+.nav-logoImg{
+    height: 50px;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   background-color: rgb(255, 255, 255);
+   height: 130px;
+   align-items: center;
+}
+.navbar-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding:0 20px;
+}
+.navbar-ul{
+    display: flex;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+.navbar-li{
+    font-family: "Roboto";
+    list-style: none;
+    margin: 25px;
+    font-size: 15px;
+    line-height: 25.4px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.nav-dropdown{
+    position: absolute;
+    /* border: 4px solid red; */
+    width: 104px;
+    height: 52px;
+}
+.nav-dropMenu{
+    /* border: 6px solid black; */
+    position: absolute;
+    background-color: #2e77eb;
+    width: 220px;
+    top: 98%;
+    display: none;
+}
+.drop-ul{
+    padding: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.drop-li{
+    list-style: none;
+    margin-top: 17px;
+    color: white;
+}
+.nav-services:hover .nav-dropMenu{
+    display: block;
+}
+.nav-dropdown:hover{
+    display: block;
+    
+}
+.nav-services{
+/* border: 1px solid red; */
+
+}
+.span-service{
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+.span-service p{
+    margin:0 10px;
+}
+.drop-li:hover{
+    color: rgb(221, 217, 217);
+    transition: all .3s ease-in-out;
+}
+.Navlink{
+    text-decoration: none;
+}
+
+.R_Nav-list{
+    color: #675f86;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 15px;
+}
+.Nav-list a, .R_Nav-list a{
+    text-decoration: none !important;
+    color: #675f86;
+}
+.R_NavBar-nav{
+    display: none;
+}
+.off_canvas{
+    background: linear-gradient(
+        90deg,
+        rgba(255, 252, 250, 1) 0%,
+        rgba(254, 235, 220, 1) 79%
+    );
+}
+.Burger{
+    padding: 10px;
+    width: 80px;
+}
+.line{
+    width: 40px;
+    height: 3px;
+    margin: 7px;
+    background-color: #675f86;
+}
+
+@media screen and (max-width: 936px){
+    .R_NavBar-nav{
+        display: block;
+        width: 90%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .navbar-child{
+        display: none;
+    }
+}
